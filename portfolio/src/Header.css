@@ -43,6 +43,7 @@
 .page_anchor_container:hover {
     background-color: #8B5DFF;
     box-shadow: 8px 8px 0px 0px #6A42C2;
+    color: #FFF7D1;
 }
 
 .page_anchor {
@@ -59,7 +60,4 @@
     justify-content: end;
     align-items: center;
     gap: 2rem;
-}
-
-.social_icon {
 }

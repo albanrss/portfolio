@@ -4,33 +4,41 @@ import './Header.css'
 function Header() {
     return (
       <>
-        <div class="main_header_container">
-          <div class="logo">
-            <a class="logo_anchor" href="/">Alban Roussée</a>
+        <div className="main_header_container">
+          <div className="logo">
+            <a className="logo_anchor" href="/">Alban Roussée</a>
           </div>
-          <div class="pages">
-            <div class="page_anchor_container">
-              <a class="page_anchor" href='#top'>Accueil</a>
-            </div>
-            <div class="page_anchor_container">
-              <a class="page_anchor" href='#about-me'>A propos</a>
-            </div>
-            <div class="page_anchor_container">
-              <a class="page_anchor" href='#projects'>Projets</a>
-            </div>
-            <div class="page_anchor_container">
-              <a class="page_anchor" href='#skills'>Compétences</a>
-            </div>
+          <div className="pages">
+            <a className="page_anchor" href='#top'>
+              <div className="page_anchor_container">
+                Accueil
+              </div>
+            </a>
+            <a className="page_anchor" href='#about-me'>
+              <div className="page_anchor_container">
+                A propos
+              </div>
+            </a>
+            <a className="page_anchor" href='#skills'>
+              <div className="page_anchor_container">
+                Compétences
+              </div>
+            </a>
+            <a className="page_anchor" href='#projects'>
+              <div className="page_anchor_container">
+                Projets
+              </div>
+            </a>
           </div>
-          <div class="social">
+          <div className="social">
             <a href="https://www.instagram.com/alban._.rss/">
-              <i class="fa-brands fa-instagram fa-2x social_icon"></i>
+              <i className="fa-brands fa-instagram fa-2x social_icon"></i>
             </a>
             <a href="https://www.linkedin.com/in/alban-roussee/">
-              <i class="fa-brands fa-linkedin fa-2x social_icon"></i>
+              <i className="fa-brands fa-linkedin fa-2x social_icon"></i>
             </a>
             <a href="https://github.com/albanrss">
-              <i class="fa-brands fa-github fa-2x social_icon"></i>
+              <i className="fa-brands fa-github fa-2x social_icon"></i>
             </a>
           </div>
         </div>
