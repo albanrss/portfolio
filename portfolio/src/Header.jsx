@@ -23,9 +23,15 @@ function Header() {
             </div>
           </div>
           <div class="social">
-            <i class="fa-brands fa-instagram fa-2x social_icon"></i>
-            <i class="fa-brands fa-linkedin fa-2x social_icon"></i>
-            <i class="fa-brands fa-github fa-2x social_icon"></i>
+            <a href="https://www.instagram.com/alban._.rss/">
+              <i class="fa-brands fa-instagram fa-2x social_icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alban-roussee/">
+              <i class="fa-brands fa-linkedin fa-2x social_icon"></i>
+            </a>
+            <a href="https://github.com/albanrss">
+              <i class="fa-brands fa-github fa-2x social_icon"></i>
+            </a>
           </div>
         </div>
       </>
