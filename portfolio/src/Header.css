@@ -1,0 +1,65 @@
+.main_header_container {
+    margin: 1rem;
+    border-radius: 16px;
+    min-height: 5vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 100%;
+    width: 25%;
+    padding-left: 3rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo_anchor {
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.pages {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page_anchor_container {
+    border-radius: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.page_anchor_container:hover {
+    background-color: #8B5DFF;
+    box-shadow: 8px 8px 0px 0px #6A42C2;
+}
+
+.page_anchor {
+    font-size: x-large;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.social {
+    height: 100%;
+    width: 25%;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social_icon {
+}
