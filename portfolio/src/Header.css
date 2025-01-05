@@ -1,15 +1,16 @@
 .main_header_container {
     margin: 1rem;
-    border-radius: 16px;
-    min-height: 5vh;
+    margin-top: 0;
     padding: 1rem;
+    padding-top: 2rem;
+    border-radius: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
 
-.logo {
+#logo {
     height: 100%;
     width: 25%;
     padding-left: 3rem;
@@ -24,7 +25,11 @@
     font-weight: 800;
 }
 
-.pages {
+h1 {
+    margin: 0;
+}
+
+#pages {
     height: 100%;
     width: 50%;
     display: flex;
@@ -32,28 +37,32 @@
     align-items: center;
 }
 
-.page_anchor_container {
+#page_anchor_container {
     border-radius: 16px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    white-space: nowrap;
-}
-
-.page_anchor_container:hover {
     background-color: #8B5DFF;
     box-shadow: 8px 8px 0px 0px #6A42C2;
-    color: #FFF7D1;
+    position: absolute;
+    z-index: 21;
+    left: 0px;
+    transition: ease-out 0.1s;
 }
 
 .page_anchor {
     font-size: x-large;
     font-weight: 800;
     text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    white-space: nowrap;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.social {
+#social {
     height: 100%;
     width: 25%;
     padding-right: 3rem;
@@ -61,4 +70,13 @@
     justify-content: end;
     align-items: center;
     gap: 2rem;
+}
+
+#header_id {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    color: white;
+    z-index: 10;
 }
