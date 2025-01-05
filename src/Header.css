@@ -3,7 +3,6 @@
     margin-top: 0;
     padding: 1rem;
     padding-top: 2rem;
-    border-radius: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,11 +38,10 @@ h1 {
 
 #page_anchor_container {
     border-radius: 16px;
-    background-color: #8B5DFF;
-    box-shadow: 8px 8px 0px 0px #6A42C2;
+    background-color: #6A42C2;
+    box-shadow: 8px 8px 0px 0px #563A9C;
     position: absolute;
     z-index: 21;
-    left: 0px;
     transition: ease-out 0.1s;
 }
 
@@ -60,6 +58,7 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: #FFF7D1;
 }
 
 #social {
@@ -77,6 +76,7 @@ h1 {
     top: 0;
     left: 0;
     position: fixed;
-    color: white;
+    color: #FFF7D1;
     z-index: 10;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }

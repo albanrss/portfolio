@@ -1,21 +1,13 @@
 import "./Header.css";
 import { useEffect, createRef, useState } from "react";
 
-
 function Header() {
   const containerRef = createRef();
   const [defaultPage, setDefaultPage] = useState(null);
   const [lastPage, setLastPage] = useState(null);
 
-  window.addEventListener('scroll', () => {
-    const opacity = Math.min(0.6, window.scrollY / 200);
-    const header = document.getElementById("header_id");
-  
-    header.style.background = `linear-gradient(to bottom, rgba(0, 0, 0, ${opacity}), rgba(0, 0, 0, 0))`;
-  });
-
   useEffect(() => {
-    function setUpContainer() {
+    const setUpContainer = () => {
       const container = containerRef.current;
       const firstPage = document.getElementById("first_page");
 
@@ -24,8 +16,6 @@ function Header() {
       container.style.width = `${rect.width}px`;
       container.style.height = `${rect.height}px`;
       container.style.left = `${rect.left}px`;
-
-      firstPage.style.color = "#FFF7D1";
 
       setDefaultPage(firstPage);
       setLastPage(firstPage);
@@ -40,13 +30,10 @@ function Header() {
 
     const rect = page.getBoundingClientRect();
 
-    lastPage.style.color = "#2A3335";
-
     container.style.width = `${rect.width}px`;
     container.style.height = `${rect.height}px`;
     container.style.left = `${rect.left}px`;
 
-    page.style.color = "#FFF7D1";
     setLastPage(page);
   };
 
@@ -59,8 +46,6 @@ function Header() {
     container.style.height = `${rect.height}px`;
     container.style.left = `${rect.left}px`;
 
-    lastPage.style.color = "#2A3335";
-    defaultPage.style.color = "#FFF7D1";
     setLastPage(defaultPage);
   };
 
