@@ -4,9 +4,9 @@ import './Header.css'
 function Header() {
     return (
       <>
-        <div className="main_header_container">
+        <div id="top" className="main_header_container">
           <div className="logo">
-            <a className="logo_anchor" href="/">Alban Roussée</a>
+            <a className="logo_anchor" href="/"><h1>Alban Roussée</h1></a>
           </div>
           <div className="pages">
             <a className="page_anchor" href='#top'>

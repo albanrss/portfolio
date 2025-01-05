@@ -2,3 +2,43 @@
     margin: 1rem;
     padding: 1rem;
 }
+
+.contents {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me {
+    max-width: 56rem;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#skills {
+    max-width: 56rem;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#projects {
+    max-width: 56rem;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+p {
+    font-size: large;
+    font-weight: 400;
+}
