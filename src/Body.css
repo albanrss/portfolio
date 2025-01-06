@@ -16,7 +16,7 @@
 #about-me {
     max-width: 72rem;
     width: 100%;
-    margin-top: 10rem;
+    padding-top: 10rem;
     margin-bottom: 10rem;
     display: flex;
     align-items: center;
@@ -31,14 +31,14 @@
 #skills {
     max-width: 72rem;
     width: 100%;
-    margin-top: 10rem;
+    padding-top: 10rem;
     margin-bottom: 10rem;
 }
 
 #projects {
     max-width: 72rem;
     width: 100%;
-    margin-top: 10rem;
+    padding-top: 10rem;
     margin-bottom: 20rem;
 }
 
