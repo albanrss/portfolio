@@ -15,7 +15,7 @@ function Body() {
                   Étudiant en <b>informatique</b> à <b>Epitech Nantes</b>, je suis passionné par la programmation et les nouvelles technologies. Je développe mes compétences dans des domaines variés tels que le développement web, la programmation orientée objet, et l'algorithmie.
                 </p>
                 <p>
-                  Toujours <b>curieux</b> et <b>motivé</b>, j'aime relever des défis techniques et apprendre de nouvelles compétences pour rester à jour dans ce secteur en constante évolution. Mon objectif est de concevoir des solutions innovantes et performantes pour répondre aux besoins des entreprises.
+                  Toujours <b>curieux</b> et <b>motivé</b>, j'aime relever des défis techniques et apprendre de nouvelles compétences pour rester à jour dans ce secteur en constante évolution. Mon objectif est de concevoir des <b>solutions innovantes</b> et <b>performantes</b> pour répondre aux besoins des entreprises.
                 </p>
               </div>
             </div>
