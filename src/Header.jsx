@@ -61,6 +61,7 @@ function Header() {
         <div className="main_header_container">
           <div id="logo">
             <a className="logo_anchor" href="/">
+              <span className="fa-solid fa-laptop fa-2x"></span>
               <h1>Alban Roussée</h1>
             </a>
           </div>

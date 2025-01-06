@@ -21,7 +21,6 @@
 
 #logo {
     height: 100%;
-    width: 25%;
     padding-left: 3rem;
     display: flex;
     justify-content: start;
@@ -32,18 +31,23 @@
     text-decoration: none;
     font-size: x-large;
     font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 h1 {
     margin: 0;
+    white-space: nowrap;
 }
 
 #pages {
     height: 100%;
-    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 #page_anchor_container {
@@ -73,7 +77,6 @@ h1 {
 
 #social {
     height: 100%;
-    width: 25%;
     padding-right: 3rem;
     display: flex;
     justify-content: end;
