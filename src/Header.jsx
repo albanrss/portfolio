@@ -1,25 +1,21 @@
 import "./Header.css";
-import { useEffect, createRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Header() {
-  const containerRef = createRef();
   const [defaultPage, setDefaultPage] = useState(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    const setUpContainer = () => {
-      const container = containerRef.current;
-      const firstPage = document.getElementById("first_page");
+    const container = containerRef.current;
+    const firstPage = document.getElementById("first_page");
 
-      let rect = firstPage.getBoundingClientRect();
+    let rect = firstPage.getBoundingClientRect();
 
-      container.style.width = `${rect.width}px`;
-      container.style.height = `${rect.height}px`;
-      container.style.left = `${rect.left}px`;
+    container.style.width = `${rect.width}px`;
+    container.style.height = `${rect.height}px`;
+    container.style.left = `${rect.left}px`;
 
-      setDefaultPage(firstPage);
-    }
-
-    setUpContainer();
+    setDefaultPage(firstPage);
   }, []);
 
   const moveContainer = (e) => {
