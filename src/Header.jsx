@@ -4,7 +4,6 @@ import { useEffect, createRef, useState } from "react";
 function Header() {
   const containerRef = createRef();
   const [defaultPage, setDefaultPage] = useState(null);
-  const [lastPage, setLastPage] = useState(null);
 
   useEffect(() => {
     const setUpContainer = () => {
@@ -18,7 +17,6 @@ function Header() {
       container.style.left = `${rect.left}px`;
 
       setDefaultPage(firstPage);
-      setLastPage(firstPage);
     }
 
     setUpContainer();
@@ -33,8 +31,6 @@ function Header() {
     container.style.width = `${rect.width}px`;
     container.style.height = `${rect.height}px`;
     container.style.left = `${rect.left}px`;
-
-    setLastPage(page);
   };
 
   const restartContainer = () => {
@@ -45,8 +41,6 @@ function Header() {
     container.style.width = `${rect.width}px`;
     container.style.height = `${rect.height}px`;
     container.style.left = `${rect.left}px`;
-
-    setLastPage(defaultPage);
   };
 
   const selectPage = (e) => {

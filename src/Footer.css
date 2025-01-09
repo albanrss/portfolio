@@ -1,14 +1,29 @@
 .main_footer_container {
-    height: 10rem;
     width: 100%;
     background-color: #2A3335;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .main_footer_container p {
     color: #FFF7D1;
     font-size: x-large;
     font-weight: 500;
+    margin-top: 0;
+}
+
+.footer_social {
+    color: #FFF7D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_social .fa-linkedin, .footer_social .fa-instagram, .footer_social .fa-github{
+    color: #FFF7D1;
 }
