@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     position: fixed;
-    color: #FFF7D1;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background-color: #2A3335;
+    backdrop-filter: blur(10px);
     z-index: 10;
 }
 
@@ -37,9 +37,26 @@
     gap: 2rem;
 }
 
+.fa-laptop {
+    color: #FFF7D1;
+}
+
 h1 {
     margin: 0;
     white-space: nowrap;
+    font-size:xx-large;
+    color: #FFF7D1;
+}
+
+.pages_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pages {
@@ -82,4 +99,8 @@ h1 {
     justify-content: end;
     align-items: center;
     gap: 2rem;
+}
+
+.fa-linkedin, .fa-instagram, .fa-github {
+    color: #FFF7D1;
 }

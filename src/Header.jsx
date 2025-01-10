@@ -55,41 +55,43 @@ function Header() {
               <h1>Alban Roussée</h1>
             </a>
           </div>
-          <div id="pages" onMouseLeave={restartContainer}>
-            <a
-              id="first_page"
-              className="page_anchor"
-              href="#top"
-              onMouseEnter={(e) => moveContainer(e)}
-              onClick={(e) => selectPage(e)}
-            >
-              Accueil
-            </a>
-            <a
-              className="page_anchor"
-              href="#about-me"
-              onMouseEnter={(e) => moveContainer(e)}
-              onClick={(e) => selectPage(e)}
-            >
-              A propos
-            </a>
-            <a
-              className="page_anchor"
-              href="#skills"
-              onMouseEnter={(e) => moveContainer(e)}
-              onClick={(e) => selectPage(e)}
-            >
-              Compétences
-            </a>
-            <a
-              className="page_anchor"
-              href="#projects"
-              onMouseEnter={(e) => moveContainer(e)}
-              onClick={(e) => selectPage(e)}
-            >
-              Projets
-            </a>
-            <span ref={containerRef} id="page_anchor_container"></span>
+          <div className="pages_container">
+            <div id="pages" onMouseLeave={restartContainer}>
+              <a
+                id="first_page"
+                className="page_anchor"
+                href="#top"
+                onMouseEnter={(e) => moveContainer(e)}
+                onClick={(e) => selectPage(e)}
+              >
+                Accueil
+              </a>
+              <a
+                className="page_anchor"
+                href="#about-me"
+                onMouseEnter={(e) => moveContainer(e)}
+                onClick={(e) => selectPage(e)}
+              >
+                A propos
+              </a>
+              <a
+                className="page_anchor"
+                href="#skills"
+                onMouseEnter={(e) => moveContainer(e)}
+                onClick={(e) => selectPage(e)}
+              >
+                Compétences
+              </a>
+              <a
+                className="page_anchor"
+                href="#projects"
+                onMouseEnter={(e) => moveContainer(e)}
+                onClick={(e) => selectPage(e)}
+              >
+                Projets
+              </a>
+              <span ref={containerRef} id="page_anchor_container"></span>
+            </div>
           </div>
           <div id="social">
             <a href="https://www.linkedin.com/in/alban-roussee/">
@@ -99,7 +101,7 @@ function Header() {
               <i className="fa-brands fa-github fa-2x"></i>
             </a>
             <a href="https://www.instagram.com/alban._.rss/">
-              <i className="fa-brands fa-square-instagram fa-2x"></i>
+              <i className="fa-brands fa-instagram fa-2x"></i>
             </a>
           </div>
         </div>

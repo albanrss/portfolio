@@ -4,6 +4,10 @@
 }
 
 body {
-    background-color: #FFF7D1;
+    background-color: #2A3335;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
