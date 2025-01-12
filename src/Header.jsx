@@ -6,16 +6,18 @@ function Header() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const container = containerRef.current;
-    const firstPage = document.getElementById("first_page");
-
-    let rect = firstPage.getBoundingClientRect();
-
-    container.style.width = `${rect.width}px`;
-    container.style.height = `${rect.height}px`;
-    container.style.left = `${rect.left}px`;
-
-    setDefaultPage(firstPage);
+    setTimeout(() => {
+      const container = containerRef.current;
+      const firstPage = document.getElementById("first_page");
+      
+      const rect = firstPage.getBoundingClientRect();
+      
+      container.style.width = `${rect.width}px`;
+      container.style.height = `${rect.height}px`;
+      container.style.left = `${rect.left}px`;
+      
+      setDefaultPage(firstPage);
+    }, 5);
   }, []);
 
   const moveContainer = (e) => {

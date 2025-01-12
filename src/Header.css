@@ -69,10 +69,10 @@ h1 {
 }
 
 #page_anchor_container {
+    position: absolute;
     border-radius: 16px;
     background-color: #6A42C2;
     box-shadow: 8px 8px 0px 0px #563A9C;
-    position: absolute;
     transition: ease-out 0.1s;
     z-index: 15;
 }
